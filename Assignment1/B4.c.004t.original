@@ -1,0 +1,143 @@
+
+;; Function snprintf (null)
+;; enabled by -tree-original
+
+
+{
+  register int __retval;
+  char * __local_argv;
+
+    register int __retval;
+    char * __local_argv;
+  __builtin_va_start ((char * &) &__local_argv, __format);
+  __retval = __mingw_vsnprintf (__buf, __len, __format, __local_argv);
+  __builtin_va_end ((char * &) &__local_argv);
+  return __retval;
+}
+
+
+;; Function vsnprintf (null)
+;; enabled by -tree-original
+
+
+{
+  return __mingw_vsnprintf (__buf, __len, __format, __local_argv);
+}
+
+
+;; Function getc (null)
+;; enabled by -tree-original
+
+
+{
+  return  --__F->_cnt >= 0 ? (int) (unsigned char) *__F->_ptr++  : _filbuf (__F);
+}
+
+
+;; Function putc (null)
+;; enabled by -tree-original
+
+
+{
+  return  --__F->_cnt >= 0 ? (int) (unsigned char) (*__F->_ptr++  = (char) __c) : _flsbuf (__c, __F);
+}
+
+
+;; Function getchar (null)
+;; enabled by -tree-original
+
+
+{
+  return  --_iob[0]._cnt >= 0 ? (int) (unsigned char) *_iob[0]._ptr++  : _filbuf (&_iob[0]);
+}
+
+
+;; Function putchar (null)
+;; enabled by -tree-original
+
+
+{
+  return  --_iob[1]._cnt >= 0 ? (int) (unsigned char) (*_iob[1]._ptr++  = (char) __c) : _flsbuf (__c, &_iob[1]);
+}
+
+
+;; Function _fseeki64 (null)
+;; enabled by -tree-original
+
+
+{
+  return __mingw_fseeki64 (__f, __o, __w);
+}
+
+
+;; Function _ftelli64 (null)
+;; enabled by -tree-original
+
+
+{
+  return __mingw_ftelli64 (__file);
+}
+
+
+;; Function _get_output_format (null)
+;; enabled by -tree-original
+
+
+{
+  return __mingw_get_output_format ();
+}
+
+
+;; Function _set_output_format (null)
+;; enabled by -tree-original
+
+
+{
+  return __mingw_set_output_format (__style);
+}
+
+
+;; Function _get_printf_count_output (null)
+;; enabled by -tree-original
+
+
+{
+  return __mingw_get_printf_count_output ();
+}
+
+
+;; Function _set_printf_count_output (null)
+;; enabled by -tree-original
+
+
+{
+  return __mingw_set_printf_count_output (__mode);
+}
+
+
+;; Function fopen64 (null)
+;; enabled by -tree-original
+
+
+{
+  return fopen (filename, mode);
+}
+
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  int a;
+  int b;
+  int c;
+
+    int a;
+    int b;
+    int c;
+  b = ((a + c) + b) * (c + a);
+  return b;
+}
+return 0;
+
