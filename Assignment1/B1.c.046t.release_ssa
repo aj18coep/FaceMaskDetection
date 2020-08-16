@@ -1,0 +1,42 @@
+
+;; Function AddTwo (AddTwo, funcdef_no=13, decl_uid=2008, cgraph_uid=14, symbol_order=13)
+
+Released 0 names, 0.00%, removed 0 holes
+AddTwo (int a)
+{
+  int D.2014;
+  int _3;
+
+  <bb 2> :
+  a_2 = a_1(D) + 2;
+  _3 = a_2;
+
+  <bb 3> :
+<L0>:
+  return _3;
+
+}
+
+
+
+;; Function main (main, funcdef_no=14, decl_uid=2010, cgraph_uid=15, symbol_order=14)
+
+Released 0 names, 0.00%, removed 0 holes
+main ()
+{
+  int x;
+  int D.2016;
+  int _5;
+
+  <bb 2> :
+  x_1 = 3;
+  x_4 = AddTwo (x_1);
+  _5 = x_4;
+
+  <bb 3> :
+<L0>:
+  return _5;
+
+}
+
+

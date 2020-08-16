@@ -1,0 +1,33 @@
+
+;; Function AddTwo (AddTwo, funcdef_no=13, decl_uid=2008, cgraph_uid=14, symbol_order=13)
+
+AddTwo (int a)
+{
+  int D.2014;
+
+  a = a + 2;
+  D.2014 = a;
+  return D.2014;
+}
+
+
+
+;; Function main (main, funcdef_no=14, decl_uid=2010, cgraph_uid=15, symbol_order=14)
+
+main ()
+{
+  int D.2016;
+
+  {
+    int x;
+
+    x = 3;
+    x = AddTwo (x);
+    D.2016 = x;
+    return D.2016;
+  }
+  D.2016 = 0;
+  return D.2016;
+}
+
+

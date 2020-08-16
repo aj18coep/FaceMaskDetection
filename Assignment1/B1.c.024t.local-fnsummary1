@@ -1,0 +1,70 @@
+
+;; Function AddTwo (AddTwo, funcdef_no=13, decl_uid=2008, cgraph_uid=14, symbol_order=13)
+
+
+Analyzing function body size: AddTwo
+
+IPA function summary for AddTwo/13
+  global time:     3.000000
+  self size:       4
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:2.000000, time:3.000000
+    size:2.000000, time:0.000000,  executed if:(not inlined)
+  calls:
+
+AddTwo (int a)
+{
+  int D.2014;
+  int _3;
+
+  <bb 2> :
+  a_2 = a_1(D) + 2;
+  _3 = a_2;
+
+  <bb 3> :
+<L0>:
+  return _3;
+
+}
+
+
+
+;; Function main (main, funcdef_no=14, decl_uid=2010, cgraph_uid=15, symbol_order=14)
+
+
+Analyzing function body size: main
+
+IPA function summary for main/14
+  global time:     14.000000
+  self size:       6
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:2.000000
+    size:2.000000, time:0.000000,  executed if:(not inlined)
+  calls:
+    AddTwo/13 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 3 time: 12callee size: 2 stack: 0
+
+main ()
+{
+  int x;
+  int D.2016;
+  int _5;
+
+  <bb 2> :
+  x_1 = 3;
+  x_4 = AddTwo (x_1);
+  _5 = x_4;
+
+  <bb 3> :
+<L0>:
+  return _5;
+
+}
+
+
