@@ -1,0 +1,1 @@
+1.Variable a can take the values from 4 upto 99. The if condition will never be true and b=b+2 will not be executed. This loop can also be eliminated for optimization purpose.
