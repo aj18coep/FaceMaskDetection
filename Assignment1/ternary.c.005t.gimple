@@ -1,0 +1,23 @@
+main ()
+{
+  int iftmp.0;
+  int D.2017;
+
+  {
+    int a;
+    int b;
+    int c;
+
+    if (a != 0) goto <D.2014>; else goto <D.2015>;
+    <D.2014>:
+    iftmp.0 = b;
+    goto <D.2016>;
+    <D.2015>:
+    iftmp.0 = c;
+    <D.2016>:
+  }
+  D.2017 = 0;
+  return D.2017;
+}
+
+

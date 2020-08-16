@@ -1,0 +1,39 @@
+main ()
+{
+  int D.2017;
+
+  {
+    int a[3];
+    int b[3];
+    int i;
+    int * p;
+
+    try
+      {
+        b[0] = 1;
+        b[1] = 2;
+        b[2] = 3;
+        i = 0;
+        goto <D.2014>;
+        <D.2013>:
+        _1 = b[i];
+        a[i] = _1;
+        i = i + 1;
+        <D.2014>:
+        if (i <= 2) goto <D.2013>; else goto <D.2015>;
+        <D.2015>:
+        p = &a;
+        _2 = p + 8;
+        *_2 = 5;
+      }
+    finally
+      {
+        a = {CLOBBER};
+        b = {CLOBBER};
+      }
+  }
+  D.2017 = 0;
+  return D.2017;
+}
+
+

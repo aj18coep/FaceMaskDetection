@@ -1,0 +1,40 @@
+main ()
+{
+  int D.2016;
+
+  {
+    int Z;
+    static void f ();
+
+
+  }
+  D.2016 = 0;
+  return D.2016;
+}
+
+
+f ()
+{
+  int a;
+  int b;
+  int c;
+
+  a = Z;
+  if (a <= 9) goto <D.2017>; else goto <D.2018>;
+  <D.2017>:
+  b = 5;
+  c = 17;
+  goto <D.2019>;
+  <D.2018>:
+  b = 6;
+  c = 20;
+  if (a == 0) goto <D.2020>; else goto <D.2021>;
+  <D.2020>:
+  c = 0;
+  <D.2021>:
+  <D.2019>:
+  _1 = b * 10;
+  Z = c + _1;
+}
+
+

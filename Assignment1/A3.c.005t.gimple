@@ -1,0 +1,38 @@
+main ()
+{
+  int D.2022;
+
+  {
+    int sum;
+    int i;
+    int j;
+
+    sum = 0;
+    goto <D.2013>;
+    <D.2012>:
+    sum = sum * 2;
+    <D.2013>:
+    if (sum <= 99) goto <D.2012>; else goto <D.2014>;
+    <D.2014>:
+    i = 0;
+    goto <D.2019>;
+    <D.2018>:
+    j = 0;
+    goto <D.2016>;
+    <D.2015>:
+    _1 = i * j;
+    sum = sum + _1;
+    j = j + 1;
+    <D.2016>:
+    if (j <= 49) goto <D.2015>; else goto <D.2017>;
+    <D.2017>:
+    i = i + 1;
+    <D.2019>:
+    if (i <= 24) goto <D.2018>; else goto <D.2020>;
+    <D.2020>:
+  }
+  D.2022 = 0;
+  return D.2022;
+}
+
+

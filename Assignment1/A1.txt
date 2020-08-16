@@ -1,0 +1,2 @@
+1.The if blocks are splitted into different sections. They are provided with some labels.If there are unconditional jumps,goto is used. If there are conditional jumps,if and else,both of them are used.
+2.For ternary operators,if else gotos have been introduced. Respective values have been assigned to temporary variables.

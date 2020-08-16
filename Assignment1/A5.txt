@@ -1,0 +1,26 @@
+1. Local variables ahave a suffix of a number which is unique.It represents the assignment.In this C program,the variable c is suffixed with '(D)'. The variable c is not assignes with any value and it has been used. Thus,variables that are used before assignment are suffixed with '(D)'.
+2.The function of a PHI node is to merge assignments from different paths and create a new assignment.
+Eg-
+# b_2 = PHI <b_8(3), b_6(4)> it means that if the condition in the if statement is true,then b_8(3) wiil be used and if else part is true then b_6(4) will be used. If and else conditions are assigned to different blocks which are indicated by bb(basic block).
+3.In C we have Switch Statement. In a switch statement, value is assigned to a variable depending on which of the case is true. this is the case of merging of more than two paths due to more than two assignments.
+Eg-
+int main()
+{
+	int m,n;
+	switch(m)
+	{
+		case 1:
+			n=1;
+			break;
+		case 2:
+			n=2;
+			break;
+		case 3:
+			n=3;
+			break;
+		default:
+			n=4;
+	}return n;
+}
+The syntax of PHI node might be thus-
+n_1=PHI <n_1(2),n_2(3),n_3(4),n_4(5)>
