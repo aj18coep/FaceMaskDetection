@@ -1,0 +1,29 @@
+1)FACTORIAL OF NUMBER
+
+(defun fact(n)
+    if(= n 1)
+        1
+    (* n fact(- n 1)))
+
+2)AVERAGE OF LIST NUMBERS
+(defun avrg(x)
+    "Average value"
+    (defun sumup (x)
+        (if (equal x nil) 0
+            (+ (car x) (sumup (cdr x)) )
+        )
+    )
+    (if 
+        (equal x nil) 0
+        (/ (sumup x) (list-length x) )
+    )
+)
+(print (avrg '(2 4 2 4 5)))
+
+3)AREA OF CIRCLE 
+(defconstant PI 3.141592)
+(defun area-circle(rad)
+   (terpri)
+   (format t "Radius: ~5f" rad)
+   (format t "~%Area: ~10f" (* PI rad rad)))
+(area-circle 10)
