@@ -1,0 +1,3 @@
+1. Firstly the arrays of required sizes are created and then elements are added in the array index wise. The index always starts from zero.
+2.The temporary variables have been introduced as GIMPLE performs one operation per statement. It will not read and write at the same time.
+3.While the compiler is aware of changes to enteries listed in the output operands,the inline asm code may modify more than just the outputs.For example, calculations may require additional registers,or the processor may overwrite a register as a side effect of a particular assembler instruction.In order to inform compiler of these changes,list them in the clobber list. Clobber list items are register names or the special clobbers. Each clobber list item is a string constant.
