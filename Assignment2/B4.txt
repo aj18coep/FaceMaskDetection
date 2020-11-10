@@ -1,0 +1,2 @@
+1. In the original code,it was computed twice. But after demanding -o2,it reused the temporary variable and the expression was computed only once.
+3. return b is used to indicate that variable b has been computed otherwise main will return 0 and the code becomes useless.
