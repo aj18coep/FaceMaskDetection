@@ -1,0 +1,1 @@
+If a=a+N is replaced by a=a+1,the loop will be unrolled. As a is an constant with value 10,the value will be propagated with the help of constant propagation to find the final value of a.
