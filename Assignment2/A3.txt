@@ -1,0 +1,6 @@
+1. The basic blocks that correspond to the while loop are <bb 4>,<bb 3> and <bb 5>. For a while loop,there is a jump to a block multiple times. for if else loops,there is only one jump to particular block.
+2. The basic blocks for the nested for lop are-
+initializers- <bb 5>,<bb 6>
+conditions-<bb 10> <bb 8>
+increments-<bb 7> <bb 9>
+A for loop is basically a while loop. Initializer is separated into initial absic block for the for loop.
