@@ -1,0 +1,132 @@
+1.)
+   0x00401410 <+0>:     push   %ebp
+   0x00401411 <+1>:     mov    %esp,%ebp
+   0x00401413 <+3>:     and    $0xfffffff0,%esp
+   0x00401416 <+6>:     call   0x401970 <__main>
+   0x0040141b <+11>:    nop
+   0x0040141c <+12>:    leave
+   0x0040141d <+13>:    ret
+End of assembler dump.
+
+2.)
+   0x00401410 <+0>:     push   %ebp
+   0x00401411 <+1>:     mov    %esp,%ebp
+   0x00401413 <+3>:     and    $0xfffffff0,%esp
+   0x00401416 <+6>:     sub    $0x10,%esp
+   0x00401419 <+9>:     call   0x401990 <__main>
+   0x0040141e <+14>:    movl   $0x0,0xc(%esp)
+   0x00401426 <+22>:    movl   $0x1,0x8(%esp)
+   0x0040142e <+30>:    movl   $0x0,0x4(%esp)
+   0x00401436 <+38>:    nop
+   0x00401437 <+39>:    leave
+   0x00401438 <+40>:    ret
+
+3.)
+  0x00401410 <+0>:     push   %ebp
+   0x00401411 <+1>:     mov    %esp,%ebp
+   0x00401413 <+3>:     and    $0xfffffff0,%esp
+   0x00401416 <+6>:     sub    $0x10,%esp
+   0x00401419 <+9>:     call   0x4019a0 <__main>
+   0x0040141e <+14>:    movl   $0x0,0xc(%esp)
+   0x00401426 <+22>:    movl   $0x1,0x8(%esp)
+   0x0040142e <+30>:    movl   $0x0,0x4(%esp)
+   0x00401436 <+38>:    movb   $0x68,0x3(%esp)
+   0x0040143b <+43>:    movb   $0x6a,0x2(%esp)
+   0x00401440 <+48>:    nop
+   0x00401441 <+49>:    leave
+   0x00401442 <+50>:    ret
+End of assembler dump.
+
+4.)
+  0x00401410 <+0>:     push   %ebp
+   0x00401411 <+1>:     mov    %esp,%ebp
+   0x00401413 <+3>:     push   %edi
+   0x00401414 <+4>:     and    $0xfffffff0,%esp
+   0x00401417 <+7>:     sub    $0x40,%esp
+   0x0040141a <+10>:    call   0x4019e0 <__main>
+   0x0040141f <+15>:    lea    0x4(%esp),%edx
+   0x00401423 <+19>:    mov    $0x0,%eax
+   0x00401428 <+24>:    mov    $0xf,%ecx
+   0x0040142d <+29>:    mov    %edx,%edi
+   0x0040142f <+31>:    rep stos %eax,%es:(%edi)
+   0x00401431 <+33>:    movl   $0x1,0x4(%esp)
+   0x00401439 <+41>:    movl   $0x2,0x8(%esp)
+   0x00401441 <+49>:    movl   $0x3,0xc(%esp)
+   0x00401449 <+57>:    movl   $0x4,0x10(%esp)
+   0x00401451 <+65>:    movl   $0x4,0x14(%esp)
+   0x00401459 <+73>:    movl   $0x5,0x18(%esp)
+   0x00401461 <+81>:    movl   $0x6,0x1c(%esp)
+   0x00401469 <+89>:    movl   $0x7,0x20(%esp)
+   0x00401471 <+97>:    movl   $0x8,0x24(%esp)
+   0x00401479 <+105>:   movl   $0x9,0x28(%esp)
+   0x00401481 <+113>:   nop
+   0x00401482 <+114>:   mov    -0x4(%ebp),%edi
+   0x00401485 <+117>:   leave
+   0x00401486 <+118>:   ret
+End of assembler dump.
+
+5.)
+   0x00401410 <+0>:     push   %ebp
+   0x00401411 <+1>:     mov    %esp,%ebp
+   0x00401413 <+3>:     and    $0xfffffff0,%esp
+   0x00401416 <+6>:     sub    $0x10,%esp
+   0x00401419 <+9>:     call   0x401980 <__main>
+   0x0040141e <+14>:    flds   0x405044
+   0x00401424 <+20>:    fstps  0xc(%esp)
+   0x00401428 <+24>:    nop
+   0x00401429 <+25>:    leave
+   0x0040142a <+26>:    ret
+End of assembler dump.
+
+6.)
+  0x00401410 <+0>:     push   %ebp
+   0x00401411 <+1>:     mov    %esp,%ebp
+   0x00401413 <+3>:     and    $0xfffffff0,%esp
+   0x00401416 <+6>:     sub    $0x20,%esp
+   0x00401419 <+9>:     call   0x401990 <__main>
+   0x0040141e <+14>:    movl   $0x1,0xc(%esp)
+   0x00401426 <+22>:    movl   $0x2,0x14(%esp)
+   0x0040142e <+30>:    flds   0x405044
+   0x00401434 <+36>:    fstps  0x18(%esp)
+   0x00401438 <+40>:    movb   $0x63,0x1c(%esp)
+   0x0040143d <+45>:    nop
+   0x0040143e <+46>:    leave
+   0x0040143f <+47>:    ret
+End of assembler dump.
+
+7.)
+  0x00401410 <+0>:     push   %ebp
+   0x00401411 <+1>:     mov    %esp,%ebp
+   0x00401413 <+3>:     and    $0xfffffff0,%esp
+   0x00401416 <+6>:     sub    $0x10,%esp
+   0x00401419 <+9>:     call   0x401990 <__main>
+   0x0040141e <+14>:    movl   $0x9,0x8(%esp)
+   0x00401426 <+22>:    lea    0x8(%esp),%eax
+   0x0040142a <+26>:    mov    %eax,0xc(%esp)
+   0x0040142e <+30>:    nop
+   0x0040142f <+31>:    leave
+   0x00401430 <+32>:    ret
+End of assembler dump.
+
+8.)
+   0x0040141d <+0>:     push   %ebp
+   0x0040141e <+1>:     mov    %esp,%ebp
+   0x00401420 <+3>:     and    $0xfffffff0,%esp
+   0x00401423 <+6>:     sub    $0x20,%esp
+   0x00401426 <+9>:     call   0x4019a0 <__main>
+   0x0040142b <+14>:    movl   $0x17,0x4(%esp)
+   0x00401433 <+22>:    movl   $0x2,(%esp)
+   0x0040143a <+29>:    call   0x401410 <func>
+   0x0040143f <+34>:    mov    %eax,0x1c(%esp)
+   0x00401443 <+38>:    nop
+   0x00401444 <+39>:    leave
+   0x00401445 <+40>:    ret
+
+
+  0x00401410 <+0>:     push   %ebp
+   0x00401411 <+1>:     mov    %esp,%ebp
+   0x00401413 <+3>:     mov    0x8(%ebp),%edx
+   0x00401416 <+6>:     mov    0xc(%ebp),%eax
+   0x00401419 <+9>:     add    %edx,%eax
+   0x0040141b <+11>:    pop    %ebp
+   0x0040141c <+12>:    ret
