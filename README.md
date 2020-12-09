@@ -10,5 +10,5 @@ List Of Experiments.
 7. Assignment 7(Exception Handling)
 8. Assignment 8(Event Handling)
 9. Assignment 9(Lisp)
-10.Assignmnet 10(Prolog)
+10. Assignmnet 10(Prolog)
 
